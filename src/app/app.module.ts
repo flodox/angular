@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LidComponent } from './lid/lid.component';
 import { BerichtComponent } from './bericht/bericht.component';
 import { SpeedrunComponent } from './speedrun/speedrun.component';
-import { SpeedrunDetailsComponent } from './speedrun-details/speedrun-details.component';
 import {HttpService} from './http.service';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
@@ -18,7 +17,6 @@ import { InformatieComponent } from './informatie/informatie.component';
     LidComponent,
     BerichtComponent,
     SpeedrunComponent,
-    SpeedrunDetailsComponent,
     HomeComponent,
     InformatieComponent
   ],
