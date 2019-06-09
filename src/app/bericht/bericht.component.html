@@ -1,0 +1,20 @@
+<div class="col-md-6 user-container">
+  <h2 style="margin: auto"> Kwkm nieuws</h2>
+   
+      
+      <div class="row" *ngFor="let Bericht of berichten" >
+      
+        <div class="col-md-8">
+            <h3>{{Bericht.titel}}</h3>
+            <h6> {{Bericht.datum}}</h6>
+            <h6>Door  {{Bericht.lid.voornaam}} {{Bericht.lid.achternaam}} </h6>
+  
+            <p>  {{Bericht.inhoud}})</p>
+
+        </div>
+        <hr>
+    </div>
+
+    
+   
+</div>

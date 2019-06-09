@@ -1,0 +1,29 @@
+<div class="col-md-6 user-container">
+  <h2 style="margin: auto"> Speedrun Details</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>snelheid</th>
+      <th>datum</th>
+      <th>plank</th>
+      <th>zeil</th>
+      <th>naam</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let Speedrun of speedruns">
+      
+      <td>{{Speedrun.Id}}</td>
+      <td>{{Speedrun.snelheid}}</td>
+      <td>{{Speedrun.datum}}</td>
+      <td>{{Speedrun.plank}}</td>
+      <td>{{Speedrun.zeil}}</td>
+      <td>{{Speedrun.lid.achternaam}}</td>
+        
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
