@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
+import { Router } from '@angular/router';
 
 export class Lid {
   Id: number;
@@ -19,9 +21,17 @@ export class Lid {
 })
 export class LidComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router, private httpService: HttpService) { }
+leden: Lid[];
   ngOnInit() {
+
+    this.httpService.getLeden()
+    .subscribe((data: Lid[]) => {
+      this.leden = data;
+    });
+
   }
 
+
 }
+

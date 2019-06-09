@@ -24,4 +24,8 @@ export class HttpService {
   getBerichten(){
     return this.http.get(this.baseUrl + 'Bericht/Berichten');
   }
+
+  getLeden(){
+    return this.http.get(this.baseUrl + 'Lid/Leden')
+  }
 }

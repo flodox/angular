@@ -1,3 +1,27 @@
-<p>
-  lid works!
-</p>
+<div class="col-md-6 user-container">
+  <h2 style="margin: auto"> KWKM Leden</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>voornaam</th>
+      <th>achternaam</th>
+      <th>geboortedatum</th>
+      <th>straat</th>
+      <th>huisnummer</th>
+      <th>postcode</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let lid of leden">
+      
+      <td>{{lid.voornaam}}</td>
+      <td>{{lid.achternaam}}</td>
+      <td>{{lid.geboortedatum}}</td>
+      <td>{{lid.straat}}</td>
+      <td>{{lid.huisnummer}}</td>
+      <td>{{lid.postcode}}</td>
+        
+    </tr>
+    </tbody>
+  </table>
+</div>

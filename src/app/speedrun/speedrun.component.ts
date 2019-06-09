@@ -40,19 +40,11 @@ export class SpeedrunComponent implements OnInit {
         Speedrun.lid = datalid;
         console.log(Speedrun.lid.achternaam);
       });
-      
+
       })
     });
   
   } 
-
-
-
-  getlid(){
-    for (const Speedrun of this.speedruns) {
-      
-    }
-  }
      
 } 
 
