@@ -9,6 +9,8 @@ import { SpeedrunComponent } from './speedrun/speedrun.component';
 import { SpeedrunDetailsComponent } from './speedrun-details/speedrun-details.component';
 import {HttpService} from './http.service';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { InformatieComponent } from './informatie/informatie.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
     LidComponent,
     BerichtComponent,
     SpeedrunComponent,
-    SpeedrunDetailsComponent
+    SpeedrunDetailsComponent,
+    HomeComponent,
+    InformatieComponent
   ],
   imports: [
     BrowserModule,
